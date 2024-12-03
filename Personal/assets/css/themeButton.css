@@ -8,14 +8,14 @@
 
 .dark-mode {
     /* Dark Mode Variables */
-    --bg-color: #121212;
+    --bg-color: #000000;
     --text-color: #e0e0e0;
     --link-color: #bb86fc;
     --bg-image: url('../img/hero-bg-dark3.jpg'); /* Adjust path to the dark theme image */
 }
 
 /* Apply Variables to the Body */
-body {
+html, body {
     background-color: var(--bg-color);
     background-image: var(--bg-image);
     color: var(--text-color);
