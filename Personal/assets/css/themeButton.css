@@ -1,29 +1,27 @@
 :root {
-    /* Light Mode Variables */
-    --bg-color: #ffffff;
+    --background-color: #ffffff; /* Use the same name as in main.css */
     --text-color: #000000;
     --link-color: #1a73e8;
-    --bg-image: url('../img/hero-bg-light1.jpg'); /* Adjust path to the light theme image */
+    --background-image: url('../img/hero-bg-light1.jpg'); /* Adjust path to the light theme image */
 }
 
 .dark-mode {
-    /* Dark Mode Variables */
-    --bg-color: #000000;
+    --background-color: #000000; /* Align variable name */
     --text-color: #e0e0e0;
     --link-color: #bb86fc;
-    --bg-image: url('../img/hero-bg-dark3.jpg'); /* Adjust path to the dark theme image */
+    --background-image: url('../img/hero-bg-dark3.jpg'); /* Adjust path to the dark theme image */
 }
 
-/* Apply Variables to the Body */
 html, body {
-    background-color: var(--bg-color);
-    background-image: var(--bg-image);
+    background-color: var(--background-color); /* Use consistent variable */
+    background-image: var(--background-image);
     color: var(--text-color);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     transition: background-color 0.5s ease, color 0.5s ease, background-image 0.5s ease;
 }
+
 
 /* Links */
 a {
@@ -71,13 +69,13 @@ body.dark-mode::before {
 
 
 /* Text Styles for Better Readability */
-h1, p, a {
+h1, h2, h3, h4, h5, h6, p, a, strong, span, i, ul, ol {
     color: var(--text-color);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for clarity */
 }
 
 #hero {
-    background-image: var(--bg-image); /* Use the dynamic background variable */
+    background-image: var(--background-image); /* Use the dynamic background variable */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
