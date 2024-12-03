@@ -3,6 +3,7 @@
     --text-color: #000000;
     --link-color: #1a73e8;
     --background-image: url('../img/hero-bg-light1.jpg'); /* Adjust path to the light theme image */
+    --logo-image: url('assets/img/logo-light.png');
 }
 
 .dark-mode {
@@ -10,6 +11,7 @@
     --text-color: #e0e0e0;
     --link-color: #bb86fc;
     --background-image: url('../img/hero-bg-dark3.jpg'); /* Adjust path to the dark theme image */
+    --logo-image: url('assets/img/logo-dark.png');
 }
 
 html, body {
@@ -22,6 +24,13 @@ html, body {
     transition: background-color 0.5s ease, color 0.5s ease, background-image 0.5s ease;
 }
 
+#header .logo img {
+    transition: opacity 0.5s ease;
+}
+
+.footer1 {
+    background-color: var(--background-color); color: #fff; padding: 20px; text-align: center;
+}
 
 /* Links */
 a {
