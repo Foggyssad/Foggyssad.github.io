@@ -1,0 +1,93 @@
+:root {
+    /* Light Mode Variables */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a73e8;
+    --bg-image: url('../img/hero-bg-light1.jpg'); /* Adjust path to the light theme image */
+}
+
+.dark-mode {
+    /* Dark Mode Variables */
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --bg-image: url('../img/hero-bg-dark3.jpg'); /* Adjust path to the dark theme image */
+}
+
+/* Apply Variables to the Body */
+body {
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    color: var(--text-color);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-color 0.5s ease, color 0.5s ease, background-image 0.5s ease;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+/* Button Styling */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000000;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* No overlay for light mode */
+    z-index: -1;
+    transition: background 0.3s ease;
+}
+
+body.dark-mode::before {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for dark mode */
+}
+
+
+/* Text Styles for Better Readability */
+h1, p, a {
+    color: var(--text-color);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for clarity */
+}
+
+#hero {
+    background-image: var(--bg-image); /* Use the dynamic background variable */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#logo-text{
+    color: var(--text-color);
+}
+
+#navmenu a {
+    color: var(--text-color);
+}
