@@ -69,9 +69,13 @@ body.dark-mode::before {
 
 
 /* Text Styles for Better Readability */
-h1, h2, h3, h4, h5, h6, p, a, strong, span, i, ul, ol {
+h1, h2, h3, h4, h5, h6, p, a, strong, span, i, ul, ol, math {
     color: var(--text-color);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow for clarity */
+}
+
+math {
+    margin: 20px;
 }
 
 #hero {
