@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Personal Bootstrap Template</title>
+  <title>Contact - Personal Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,35 +15,43 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/themeButton.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Nov 04 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .average {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    .green {
+      color: green;
+    }
+  </style>
 </head>
 
-<body class="portfolio-page">
+<body class="contact-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.png" alt="Logo">
         <h1 id="logo-text">Main Page</h1>
       </a>
 
@@ -55,8 +63,8 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contacts</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -72,8 +80,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio</h1>
-              <p class="mb-0"><em>Explore my projects</em></p>
+              <h1>Contact</h1>
+              <p class="mb-0">Here you can find the information on how to contact me</p>
             </div>
           </div>
         </div>
@@ -82,57 +90,55 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
+            <li class="current">Contact</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
-              <div class="portfolio-content h-100">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/UdVrH7EGBbk" frameborder="0" allowfullscreen></iframe>
-                <div class="portfolio-info">
-                  <h4>Music Composition</h4>
-                  <p>Music project showcasing creativity</p>
-                  <a href="https://www.youtube.com/watch?v=UdVrH7EGBbk" title="Watch Video" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-code">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/code-project.jfif" class="img-fluid" alt="GitHub Project">
-                <div class="portfolio-info">
-                  <h4>DND Helper</h4>
-                  <p>A desktop D&D helper application</p>
-                  <a href="https://github.com/Foggyssad/DND-Helper" title="View on GitHub" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" id="address" class="form-control" placeholder="Address" required>
+            </div>
+            <div class="col-md-4">
+              <input type="number" id="num1" class="form-control" placeholder="Numeric Attribute 1" required>
+            </div>
+            <div class="col-md-4">
+              <input type="number" id="num2" class="form-control" placeholder="Numeric Attribute 2" required>
+            </div>
+            <div class="col-md-4">
+              <input type="number" id="num3" class="form-control" placeholder="Numeric Attribute 3" required>
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="button" id="submitButton" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="result mt-4" id="result"></div>
+        <div class="average mt-2" id="averageResult"></div>
       </div>
-
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Contact Section -->
 
   <button id="theme-toggle">Light/Dark Theme</button>
   </main>
+
   <footer class="footer1">
     <div>
       <p>Created by Mykhailo Yakymenko</p>
@@ -166,6 +172,8 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/button.js"></script>
+  <script src="assets/js/clock.js"></script>
+  <script src="assets/js/form-script.js"></script>
 
 </body>
 
