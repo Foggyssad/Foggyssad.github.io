@@ -27,6 +27,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/themeButton.css" rel="stylesheet">
+  <link href="assets/css/music_player.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Personal
@@ -89,66 +90,76 @@
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-
-      <div class="container">
-
-        <div class="row">
-
-            <h3 class="resume-title">Education and Training</h3>
-            <div class="resume-item">
-              <h4>Information Systems Engineering</h4>
-              <h5>2023 - Current</h5>
-              <p><em>Vilnius Gediminas Technical University, Vilnius, Lithuania</em></p>
-              <p>Overall average: 9.9/10 across two semesters.</p>
-              <p>Achieved the highest possible average in the most recent semester.</p>
-              <p>Relevant coursework: Object-Oriented Programming (on python)</p>
-            </div><!-- Edn Resume Item -->
-
-
+      <div class="layout-container">
+        <div class="list-container">
+          <div class="container">
+    
+            <div class="row">
+              <h3 class="resume-title">Education and Training</h3>
+              <div class="resume-item">
+                <h4>Information Systems Engineering</h4>
+                <h5>2023 - Current</h5>
+                <p><em>Vilnius Gediminas Technical University, Vilnius, Lithuania</em></p>
+                <p>Overall average: 9.9/10 across two semesters.</p>
+                <p>Achieved the highest possible average in the most recent semester.</p>
+                <p>Relevant coursework: Object-Oriented Programming (on python)</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Work Experience</h3>
+              <div class="resume-item">
+                <h4>Unpaid System Administrator (short-term)</h4>
+                <h5>03/2023 - 05/2023</h5>
+                <p><em>College of International Humanitarian university, Odessa, Ukraine </em></p>
+                <ul>
+                  <li>I was responsible for:</li>
+                  <li>-maintaining computers and network systems;</li>
+                  <li>-revising and reinstalling hardware and software equiment;</li>
+                  <li>-setting up IT equiment for exams.</li>
+                </ul>
+              </div>
+    
+              <div class="resume-item">
+                <h4>Unpaid Intern - Electrical Installation Team Member</h4>
+                <h5>05/12/2022 - 28/02/2023</h5>
+                <p><em>Internet provider "Alpha-TV", Odessa, Ukraine</em></p>
+                <ul>
+                  <li>I assisted professionals with:</li>
+                  <li>installation and maintnance of wiring systems for network infrastructure;</li>
+                  <li>software setup and configuration.</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Interpersonal Skills</h3>
+              <div class="resume-item">
+                <h4>Key Qualities and Areas for Growth</h4>
+                <p><em>Strengths:</em></p>
+                <p>Apadtibility | Problem-Solving Skills | Efficiency Under Pressure | Consistency | Clear Communication</p>
+                <p><em>Growth Focus:</em></p>
+                <p>Time Managment</p>
+              </div>
+            </div>
+    
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Work Experience</h3>
-            <div class="resume-item">
-              <h4>Unpaid System Administrator (short-term)</h4>
-              <h5>03/2023 - 05/2023</h5>
-              <p><em>College of International Humanitarian university, Odessa, Ukraine </em></p>
-              <ul>
-                <li>I was responsible for:</li>
-                <li>-maintaining computers and network systems;</li>
-                <li>-revising and reinstalling hardware and software equiment;</li>
-                <li>-setting up IT equiment for exams.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Unpaid Intern - Electrical Installation Team Member</h4>
-              <h5>05/12/2022 - 28/02/2023</h5>
-              <p><em>Internet provider "Alpha-TV", Odessa, Ukraine</em></p>
-              <ul>
-                <li>I assisted professionals with:</li>
-                <li>installation and maintnance of wiring systems for network infrastructure;</li>
-                <li>software setup and configuration.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Interpersonal Skills</h3>
-            <div class="resume-item">
-              <h4>Key Qualities and Areas for Growth</h4>
-              <p><em>Strengths:</em></p>
-              <p>Apadtibility | Problem-Solving Skills | Efficiency Under Pressure | Consistency | Clear Communication</p>
-              <p><em>Growth Focus:</em></p>
-              <p>Time Managment</p>
-            </div><!-- Edn Resume Item -->
-
         </div>
-
+    
+        <!-- Music Player Wrapper -->
+        <div class="music-player-wrapper">
+          <div id="player-container">
+            <h1>Music Player</h1>
+            <div id="video-list">
+              <!-- Video list will appear here -->
+            </div>
+            <div id="youtube-player">
+              <!-- YouTube Player will be embedded here -->
+            </div>
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Resume Section -->
+    </section>    
 
   <button id="theme-toggle">Light/Dark Theme</button>
   </main>
@@ -186,6 +197,8 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/button.js"></script>
   <script src="assets/js/clock.js"></script>
+  <script src="assets/js/music_player.js"></script> 
+  <script src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 
